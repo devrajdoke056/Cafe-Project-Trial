@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desert Menu</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+
+<body>
+
+<section id="dessert-menu">
+
+<div class="title-box">
+    <h1 class="desert-title">DESSERT MENU</h1>
+</div>
+
+<div class="dessert-panel">
+    <img src="chocolate tiffin.jpg" alt="Chocolate Tiffin">
+    <h3>CHOCOLATE TIFFIN</h3>
+    <p class="price">$3.99</p>
+   <button class="order-btn" onclick="openPopup()">
+    Order Now
+</button>
+</div>
+
+<div class="dessert-panel">
+    <img src="lava cake.jpg" alt="Lava Cake">
+    <h3>LAVA CAKE</h3>
+    <p class="price">$4.99</p>
+   <button class="order-btn" onclick="openPopup()">
+    Order Now
+</button>
+</div>
+
+<div class="dessert-panel">
+    <img src="eggless black forest pastry.jpg" alt="Black Forest Pastry">
+    <h3>
+    BLACK FOREST PASTRY
+    <span class="eggless">(Eggless)</span></h3>
+    <p class="price">$5.49</p><button class="order-btn" onclick="openPopup()">
+    Order Now
+</button>
+</div>
+
+</section>
+
+<!-- Popup -->
+<div id="orderPopup" class="popup">
+
+    <div class="popup-content">
+        <h2>☕ Order Confirmed!</h2>
+        <p>Thank you for your order.</p>
+        <p>Your delicious dessert is being prepared.</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+<script src="Java.js"></script>
+
+</body>
+</html>

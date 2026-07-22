@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Menu</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+
+<body>
+
+<section id="coffee-menu">
+
+    <h1 class="coffee-title">☕ COFFEE MENU</h1>
+<div class="coffee-panel">
+    <img src="espresso.jpg" alt="Espresso">
+    <h3>ESPRESSO</h3>
+    <p class="price">$3.99</p>
+    <button class="order-btn" onclick="openPopup()">
+    Order Now
+</button>
+</div>
+
+<div class="coffee-panel">
+    <img src="latte.jpg" alt="Latte">
+    <h3>LATTE</h3>
+    <p class="price">$4.99</p>
+    <button class="order-btn" onclick="openPopup()">
+    Order Now
+</button>
+</div>
+
+<div class="coffee-panel">
+    <img src="cappuccino.jpg" alt="Cappuccino">
+    <h3>CAPPUCCINO</h3>
+    <p class="price">$5.49</p>
+    <button class="order-btn" onclick="openPopup()">
+    Order Now
+</button>
+</div>
+
+</section>
+
+<!-- Popup -->
+<div id="orderPopup" class="popup">
+
+    <div class="popup-content">
+        <h2>☕ Order Confirmed!</h2>
+        <p>Thank you for your order.</p>
+        <p>Your delicious coffee is being prepared.</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+<script src="Java.js"></script>
+
+</body>
+</html>
