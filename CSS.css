@@ -559,6 +559,16 @@ footer hr{
     font-size:16px;
 }
 
+@media (max-width:768px){
+
+nav{
+flex-direction:column;
+}
+
+.hero h1{
+font-size:42px;
+}
+
 .category-card{
 width:90%;
 }
@@ -571,6 +581,8 @@ flex-direction:column;
 text-align:center;
 }
 
+}
+
 @keyframes fadeUp{
     from{
         opacity: 0;
@@ -581,4 +593,3 @@ text-align:center;
         transform: translateY(0);
     }
 }
-
