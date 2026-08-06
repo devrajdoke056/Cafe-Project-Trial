@@ -559,68 +559,6 @@ footer hr{
     font-size:16px;
 }
 
-@media (max-width:768px){
-
-    nav{
-        flex-direction:column;
-        gap:20px;
-        padding:20px;
-    }
-
-    nav ul{
-        width:100%;
-        justify-content:center;
-        gap:15px;
-        flex-wrap:wrap;
-    }
-
-    nav ul li a{
-        padding:12px 22px;
-        font-size:16px;
-    }
-
-    .hero{
-        height:80vh;
-        padding:20px;
-    }
-
-    .hero h1{
-        font-size:42px;
-        line-height:1.2;
-        -webkit-text-stroke:1px #4E342E;
-        word-break:break-word;
-    }
-
-    .hero p{
-        font-size:18px;
-        padding:0 20px;
-    }
-
-    button{
-        padding:12px 24px;
-        font-size:16px;
-    }
-
-    #menu{
-        margin:20px;
-        padding:30px 15px;
-    }
-
-    .category-card{
-        width:90%;
-        max-width:320px;
-    }
-
-    .contact-container{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .contact-card{
-        width:90%;
-    }
-}
-
 .category-card{
 width:90%;
 }
@@ -631,8 +569,6 @@ width:90%;
 width:95%;
 flex-direction:column;
 text-align:center;
-}
-
 }
 
 @keyframes fadeUp{
@@ -646,20 +582,3 @@ text-align:center;
     }
 }
 
-@media (max-width: 768px) {
-    nav{
-        flex-direction: column;
-        padding: 15px;
-        gap: 15px;
-    }
-        nav ul{
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    nav ul li a{
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-
-}
