@@ -12,73 +12,82 @@ html{
 
 *{
     transition:.3s;
+    box-sizing:border-box;
 }
 
 body{
-font-family:Bahnshrift Lights;
-background:#FFF8F0;
-color:#333;
-margin:0;
+    font-family:Bahnshrift Lights, Arial, sans-serif;
+    background:#FFF8F0;
+    color:#333;
+    margin:0;
 }
+
+/* =========================
+   NAVIGATION
+========================= */
 
 nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-background:#6F4E37;
-color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#6F4E37;
+    color:white;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 100px;
-    margin: 0;
-    padding: 0;
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:100px;
+    margin:0;
+    padding:0;
 }
 
-nav ul li a {
-    display: inline-block;
-    padding: 20px 55px;
-    background-color: #C4923E;
-    color: white;
-    text-decoration: none;
-    border-radius: 20px;
-    font-weight: bold;
-    transition: 0.3s;
+nav ul li a{
+    display:inline-block;
+    padding:20px 55px;
+    background-color:#C4923E;
+    color:white;
+    text-decoration:none;
+    border-radius:20px;
+    font-weight:bold;
+    transition:.3s;
 }
 
-nav ul li a:hover {
-    background-color: #8B5A2B;
-    transform: translateY(-3px);
+nav ul li a:hover{
+    background-color:#8B5A2B;
+    transform:translateY(-3px);
 }
 
-.hero {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;   
-    font-family: Impact;
+/* =========================
+   HERO
+========================= */
 
-    background-image: url("background.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    font-family:Impact, sans-serif;
 
-    color: #C4923E;
-    text-align: center;
+    background-image:url("background.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+
+    color:#C4923E;
+    text-align:center;
 }
 
-.hero h1 {
-    font-size: 70px;
-    color: #C4923E;
-    font-weight: bold;
-    -webkit-text-stroke: 2px #4E342E;
+.hero h1{
+    font-size:70px;
+    color:#C4923E;
+    font-weight:bold;
+    -webkit-text-stroke:2px #4E342E;
 
-    animation: fadeUp 1.5s ease;
+    animation:fadeUp 1.5s ease;
 }
 
 button{
@@ -94,29 +103,38 @@ button{
 }
 
 button:hover{
-transform:scale(1.05);
-box-shadow:0 8px 20px rgba(0,0,0,.3);
+    transform:scale(1.05);
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
 }
 
-#menu {
-    background-color: #F5E6D3;
-    padding: 60px 20px;
-    border-radius: 20px;
-    margin: 40px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+/* =========================
+   MENU SECTION
+========================= */
+
+#menu{
+    background-color:#F5E6D3;
+    padding:60px 20px;
+    border-radius:20px;
+    margin:40px;
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
 }
 
 .card{
-background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
-transition:.3s;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
+    transform:translateY(-8px);
 }
+
+/* =========================
+   MAIN CATEGORY CARDS
+   COFFEE / BURGER / DESSERT
+========================= */
 
 .menu-categories{
     display:flex;
@@ -132,8 +150,8 @@ transform:translateY(-8px);
     border-radius:15px;
     padding:25px;
     text-align:center;
-    box-shadow:0 4px 12px rgba(0,0,0,0.15);
-    transition:0.3s;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    transition:.3s;
     cursor:pointer;
 }
 
@@ -152,6 +170,24 @@ transform:translateY(-8px);
     font-size:16px;
     line-height:1.5;
 }
+
+.category-link{
+    text-decoration:none;
+    color:inherit;
+}
+
+.category-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    display:block;
+    margin:20px auto;
+    border-radius:50%;
+}
+
+/* =========================
+   CONTACT
+========================= */
 
 #contact{
     background:#F8F1E7;
@@ -209,19 +245,9 @@ transform:translateY(-8px);
     color:white;
 }
 
-.category-link{
-    text-decoration: none;
-    color: inherit;
-}
-
-.category-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-    margin: 20px auto;
-    border-radius: 50%;
-}
+/* =========================
+   COFFEE
+========================= */
 
 .coffee-card:hover{
     transform:translateY(-10px);
@@ -230,7 +256,6 @@ transform:translateY(-8px);
 
 .coffee-card:hover img{
     transform:scale(1.08);
-    transition:.3s;
 }
 
 .coffee-card button:hover{
@@ -238,10 +263,10 @@ transform:translateY(-8px);
 }
 
 .coffee-title{
-    text-align: center;
-    font-size: 50px;
-    color: #6F4E37;
-    margin-bottom: 20px;
+    text-align:center;
+    font-size:50px;
+    color:#6F4E37;
+    margin-bottom:20px;
 }
 
 .coffee-categories{
@@ -253,37 +278,39 @@ transform:translateY(-8px);
 }
 
 #coffee-menu{
-    background-color: #9A7B4F;
-    min-height: 100vh;
-    padding: 40px;
+    background-color:#9A7B4F;
+    min-height:100vh;
+    padding:40px;
 }
 
 .coffee-panel{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 650px;
-    background: #FFF8F0;
-    border-radius: 18px;
-    padding: 20px 30px;
-    box-shadow: 0 8px 20px rgba(0,0,0,.15);
-    transition: .3s;
-    margin: 20px auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    width:650px;
+    background:#FFF8F0;
+    border-radius:18px;
+    padding:20px 30px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.3s;
+    margin:20px auto;
 }
 
 .coffee-panel img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 30px;
-    flex-shrink: 0;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-right:30px;
+    flex-shrink:0;
 }
 
 .coffee-panel h3{
-    width: 180px;
-    font-size: 24px;
-    color: #6F4E37;
+    width:180px;
+    font-size:24px;
+    color:#6F4E37;
 }
 
 .coffee-panel:hover{
@@ -293,7 +320,6 @@ transform:translateY(-8px);
 
 .coffee-panel:hover img{
     transform:scale(1.08);
-    transition:.4s;
 }
 
 .coffee-link{
@@ -302,11 +328,11 @@ transform:translateY(-8px);
 }
 
 .price{
-    width: 80px;
-    text-align: left;
-    font-size: 22px;
-    color: #C4923E;
-    font-weight: bold;
+    width:80px;
+    text-align:left;
+    font-size:22px;
+    color:#C4923E;
+    font-weight:bold;
 }
 
 .order-btn{
@@ -325,6 +351,10 @@ transform:translateY(-8px);
     background:#D9779B;
     transform:scale(1.05);
 }
+
+/* =========================
+   POPUP
+========================= */
 
 .popup{
     display:none;
@@ -358,6 +388,10 @@ transform:translateY(-8px);
     color:#555;
 }
 
+/* =========================
+   BURGER
+========================= */
+
 .burger-title{
     text-align:center;
     font-size:60px;
@@ -380,6 +414,7 @@ transform:translateY(-8px);
     min-height:100vh;
     padding:40px;
 }
+
 .burger-categories{
     display:flex;
     justify-content:center;
@@ -392,10 +427,12 @@ transform:translateY(-8px);
     display:flex;
     align-items:center;
     justify-content:space-between;
+
     width:700px;
     background:#FFFDF8;
     border-radius:20px;
     padding:20px 35px;
+
     box-shadow:0 10px 25px rgba(0,0,0,.15);
     transition:.3s;
     margin:25px auto;
@@ -424,13 +461,16 @@ transform:translateY(-8px);
 
 .burger-panel:hover img{
     transform:scale(1.08);
-    transition:.4s;
 }
 
 .burger-link{
     text-decoration:none;
     color:inherit;
 }
+
+/* =========================
+   DESSERT
+========================= */
 
 .dessert-title{
     text-align:center;
@@ -445,10 +485,6 @@ transform:translateY(-8px);
     display:inline-block;
 }
 
-.title-box{
-    text-align:center;
-}
-
 #dessert-menu{
     background-color:#FADCE5;
     min-height:100vh;
@@ -456,11 +492,11 @@ transform:translateY(-8px);
 }
 
 .eggless{
-    display: block;
-    font-size: 18px;
-    font-weight: normal;
-    color: #C45A8B;
-    margin-top: 5px;
+    display:block;
+    font-size:18px;
+    font-weight:normal;
+    color:#C45A8B;
+    margin-top:5px;
 }
 
 .dessert-categories{
@@ -475,10 +511,12 @@ transform:translateY(-8px);
     display:flex;
     align-items:center;
     justify-content:space-between;
+
     width:700px;
     background:#FFFDF8;
     border-radius:20px;
     padding:20px 35px;
+
     box-shadow:0 10px 25px rgba(0,0,0,.15);
     transition:.3s;
     margin:25px auto;
@@ -507,13 +545,16 @@ transform:translateY(-8px);
 
 .dessert-panel:hover img{
     transform:scale(1.08);
-    transition:.4s;
 }
 
 .dessert-link{
     text-decoration:none;
     color:inherit;
 }
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
     background:#4E342E;
@@ -559,37 +600,347 @@ footer hr{
     font-size:16px;
 }
 
+/* ==================================================
+   MOBILE RESPONSIVE DESIGN
+================================================== */
+
 @media (max-width:768px){
 
-nav{
-flex-direction:column;
+    /* ---------- NAV ---------- */
+
+    nav{
+        flex-direction:column;
+        padding:20px 15px;
+    }
+
+    nav ul{
+        width:100%;
+        justify-content:center;
+        gap:10px;
+        flex-wrap:wrap;
+    }
+
+    nav ul li a{
+        padding:12px 20px;
+        font-size:16px;
+    }
+
+    /* ---------- HERO ---------- */
+
+    .hero{
+        height:80vh;
+        padding:20px;
+        font-size:25px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    /* ---------- MAIN MENU ---------- */
+
+    #menu{
+        margin:0;
+        padding:40px 15px;
+        border-radius:0;
+    }
+
+    .menu-categories{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:25px;
+        margin:30px 0;
+    }
+
+    /*
+       THIS FIXES THE WIDTH OF
+       COFFEE / BURGER / DESSERT CARDS
+    */
+
+    .category-card{
+        width:calc(100% - 30px);
+        max-width:500px;
+        min-height:330px;
+
+        padding:25px 20px;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        text-align:center;
+        border-radius:22px;
+    }
+
+    .category-card img{
+        width:180px;
+        height:180px;
+        margin:10px auto 20px;
+    }
+
+    .category-card h3{
+        font-size:32px;
+        margin:5px 0;
+    }
+
+    .category-card p{
+        font-size:16px;
+    }
+
+    /* ---------- CONTACT ---------- */
+
+    #contact{
+        padding:50px 15px;
+    }
+
+    .contact-title{
+        font-size:42px;
+    }
+
+    .contact-container{
+        gap:25px;
+    }
+
+    .contact-card{
+        width:calc(100% - 20px);
+        max-width:500px;
+        padding:30px 20px;
+    }
+
+    /* ---------- COFFEE MENU ---------- */
+
+    #coffee-menu{
+        padding:30px 10px;
+    }
+
+    .coffee-title{
+        font-size:40px;
+    }
+
+    .coffee-categories{
+        margin-top:30px;
+        gap:15px;
+    }
+
+    .coffee-panel{
+        width:calc(100% - 20px);
+        max-width:600px;
+        min-height:320px;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        text-align:center;
+        padding:25px 20px;
+        margin:15px auto;
+    }
+
+    .coffee-panel img{
+        width:130px;
+        height:130px;
+        margin:0 0 15px 0;
+    }
+
+    .coffee-panel h3{
+        width:100%;
+        min-height:55px;
+        margin:5px 0;
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        font-size:22px;
+    }
+
+    .price{
+        width:auto;
+        text-align:center;
+        margin:5px 0 12px;
+        font-size:18px;
+    }
+
+    .order-btn{
+        min-width:110px;
+        padding:9px 20px;
+        font-size:14px;
+    }
+
+    /* ---------- BURGER MENU ---------- */
+
+    #burger-menu{
+        padding:30px 10px;
+    }
+
+    .burger-title{
+        font-size:42px;
+        letter-spacing:2px;
+    }
+
+    .burger-categories{
+        margin-top:30px;
+        gap:15px;
+    }
+
+    .burger-panel{
+        width:calc(100% - 20px);
+        max-width:600px;
+        min-height:320px;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        text-align:center;
+        padding:25px 20px;
+        margin:15px auto;
+    }
+
+    .burger-panel img{
+        width:130px;
+        height:130px;
+        margin:0 0 15px 0;
+    }
+
+    .burger-panel h3{
+        width:100%;
+        min-height:55px;
+        margin:5px 0;
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        font-size:22px;
+    }
+
+    /* ---------- DESSERT MENU ---------- */
+
+    #dessert-menu{
+        padding:30px 10px;
+    }
+
+    .dessert-title{
+        font-size:42px;
+        letter-spacing:2px;
+    }
+
+    .dessert-categories{
+        margin-top:30px;
+        gap:15px;
+    }
+
+    .dessert-panel{
+        width:calc(100% - 20px);
+        max-width:600px;
+        min-height:320px;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        text-align:center;
+        padding:25px 20px;
+        margin:15px auto;
+    }
+
+    .dessert-panel img{
+        width:130px;
+        height:130px;
+        margin:0 0 15px 0;
+    }
+
+    .dessert-panel h3{
+        width:100%;
+        min-height:55px;
+        margin:5px 0;
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        font-size:22px;
+    }
+
+    .eggless{
+        font-size:14px;
+    }
+
+    /* ---------- POPUP ---------- */
+
+    .popup-content{
+        width:calc(100% - 40px);
+        max-width:350px;
+        padding:30px 20px;
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    footer{
+        padding:40px 15px;
+    }
+
+    .footer-content h2{
+        font-size:30px;
+    }
+
+    .footer-links a{
+        margin:10px;
+        display:inline-block;
+    }
 }
 
-.hero h1{
-font-size:42px;
+/* =========================
+   EXTRA SMALL PHONES
+========================= */
+
+@media (max-width:400px){
+
+    .category-card{
+        width:calc(100% - 1px);
+        min-height:300px;
+    }
+
+    .category-card img{
+        width:150px;
+        height:150px;
+    }
+
+    .category-card h3{
+        font-size:28px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .coffee-panel,
+    .burger-panel,
+    .dessert-panel{
+        width:calc(100% - 10px);
+    }
 }
 
-.category-card{
-width:90%;
-}
-
-.coffee-panel,
-.burger-panel,
-.dessert-panel{
-width:95%;
-flex-direction:column;
-text-align:center;
-}
-
-}
+/* =========================
+   ANIMATION
+========================= */
 
 @keyframes fadeUp{
+
     from{
-        opacity: 0;
-        transform: translateY(40px);
+        opacity:0;
+        transform:translateY(40px);
     }
+
     to{
-        opacity: 1;
-        transform: translateY(0);
+        opacity:1;
+        transform:translateY(0);
     }
 }
