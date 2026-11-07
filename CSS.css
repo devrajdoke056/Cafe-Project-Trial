@@ -634,7 +634,9 @@ footer hr{
     }
 
     .hero h1{
-        font-size:42px;
+        font-size:32px;
+        -webkit-text-stroke:0;
+        text-shadow:none;   
     }
 
     /* ---------- MAIN MENU ---------- */
