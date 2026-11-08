@@ -635,7 +635,7 @@ footer hr{
 
     .hero h1{
         font-size:32px;
-        -webkit-text-stroke:30px #9C2007;
+        -webkit-text-stroke:5px #9C2007;
         text-shadow:none;   
     }
 
